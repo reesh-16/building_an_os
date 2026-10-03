@@ -6,7 +6,7 @@ main:
 	hlt
 
 .hlt:
-	jmp.halt
+	jmp .hlt
 
 times 510-($-$$) db 0
 dw 0AA55h
